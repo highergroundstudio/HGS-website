@@ -2160,47 +2160,6 @@ input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## home social
- * ------------------------------------------------------------------- */
-.home-content__social {
-  list-style: none;
-  margin: 0;
-  font-size: 10px;
-  line-height: 2.4rem;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  position: absolute;
-  right: calc(40px + (5.6rem/2));
-  top: 50%;
-  -webkit-transform: rotate(-90deg) translate3d(50%, 0, 0);
-  -ms-transform: rotate(-90deg) translate3d(50%, 0, 0);
-  transform: rotate(-90deg) translate3d(50%, 0, 0);
-  -webkit-transform-origin: right center;
-  -ms-transform-origin: right center;
-  transform-origin: right center;
-}
-
-.home-content__social li {
-  display: inline;
-  margin-right: 6px;
-}
-
-.home-content__social li:last-child {
-  margin-right: 0;
-}
-
-.home-content__social a {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.home-content__social a:hover,
-.home-content__social a:hover,
-.home-content__social a:active {
-  color: #ffffff;
-}
-
-
-/* ------------------------------------------------------------------- 
  * ## home scroll
  * ------------------------------------------------------------------- */
 .home-scroll {
@@ -2640,8 +2599,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-about {
   padding-top: 23.2rem;
-  padding-bottom: calc((62.4rem/2) + 6.4rem);
-  background-color: #ac4333;
+  background-color: #000;
   color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
   position: relative;
@@ -2692,7 +2650,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1400px) {
   .s-about {
-    padding-bottom: calc((62.4rem/2) + 9.6rem);
+    padding-bottom: 16rem;
   }
 
 }
@@ -2772,64 +2730,13 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about-how {
-  background-color: #ffffff;
-  padding-bottom: 16rem;
-}
-
-.video-bg {
-  z-index: 1;
-  overflow: hidden;
-  height: 62.4rem;
-  margin-top: calc((62.4rem/2) * -1);
-  background-image: url(../images/video-bg-2400.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  position: relative;
-}
-
-.video-bg .shadow-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: .85;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-}
-
-
-/* ------------------------------------------------------------------- 
- * ## video button
- * ------------------------------------------------------------------- */
-.btn-video {
-  display: inline-block;
-  text-align: center;
-  outline: none;
-  position: absolute;
-  top: 14%;
-  left: 10%;
-}
-
-.video-icon {
-  display: inline-block;
-  height: 112px;
-  width: 112px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  background-image: url(../images/icons/icon-play-black.svg);
-  background-repeat: no-repeat;
-  background-position: 55% center;
-  background-size: 24px 27px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.btn-video:hover .video-icon {
   background-color: #ac4333;
-  background-image: url(../images/icons/icon-play.svg);
+  color:#fff;
+  padding-top: 16rem;
 }
-
+.s-about-how h2, h3{
+ color: #fff;
+}
 
 /* ------------------------------------------------------------------- 
  * ## stats
@@ -3421,7 +3328,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .plans {
   margin-top: 6.4rem;
-  max-width: 840px;
+  max-width: 880px;
 }
 
 .item-plan {
@@ -3594,7 +3501,7 @@ html.no-csstransitions .home-content__main {
  * # download
  *
  * ------------------------------------------------------------------- */
-.s-download {
+.s-contact {
   padding-top: 18.4rem;
   background-color: #ac4333;
   color: rgba(255, 255, 255, 0.8);
@@ -3602,27 +3509,27 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
-.s-download .display-1,
-.s-download h3 {
+.s-contact .display-1,
+.s-contact h3 {
   color: #ffffff;
 }
 
-.s-download p.lead {
+.s-contact p.lead {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.s-download .download-badges {
+.s-contact .download-badges {
   list-style: none;
   margin: 1.2rem 0 0 -6px;
 }
 
-.s-download .download-badges li {
+.s-contact .download-badges li {
   display: inline-block;
   margin: 0 6px;
   padding-left: 0;
 }
 
-.s-download .download-badges li a {
+.s-contact .download-badges li a {
   display: block;
   width: 232px;
   height: 72px;
@@ -3634,19 +3541,19 @@ html.no-csstransitions .home-content__main {
   background-size: 232px 72px;
 }
 
-.s-download .download-badges li a.badge-appstore {
+.s-contact .download-badges li a.badge-appstore {
   background-image: url("../images/appstore.png");
 }
 
-.s-download .download-badges li a.badge-googleplay {
+.s-contact .download-badges li a.badge-googleplay {
   background-image: url("../images/google-play.png");
 }
 
-.s-download .download-bottom-image {
+.s-contact .download-bottom-image {
   margin-top: 11.2rem;
 }
 
-.s-download .download-bottom-image img {
+.s-contact .download-bottom-image img {
   vertical-align: bottom;
 }
 
@@ -3656,11 +3563,11 @@ html.no-csstransitions .home-content__main {
  * download
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
-  .s-download .download-content__badges {
+  .s-contact .download-content__badges {
     margin: 0;
   }
 
-  .s-download .download-content__image {
+  .s-contact .download-content__image {
     position: static;
     margin: 0 auto;
     max-width: 480px;
@@ -3671,18 +3578,18 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:1000px) {
-  .s-download {
+  .s-contact {
     padding-top: 17.2rem;
   }
 
 }
 
 @media only screen and (max-width:800px) {
-  .s-download {
+  .s-contact {
     padding-top: 16rem;
   }
 
-  .s-download .download-content__badges li a {
+  .s-contact .download-content__badges li a {
     width: 206px;
     height: 64px;
     background-size: 206px 64px;
@@ -3691,11 +3598,11 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:600px) {
-  .s-download {
+  .s-contact {
     padding-top: 14.8rem;
   }
 
-  .s-download .download-bottom-image {
+  .s-contact .download-bottom-image {
     margin-top: 9.6rem;
   }
 
@@ -3708,7 +3615,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-  padding-top: 18.4rem;
+  padding-top: 5rem;
   padding-bottom: 4.8rem;
   color: rgba(255, 255, 255, 0.4);
   position: relative;
@@ -3752,24 +3659,24 @@ html.no-csstransitions .home-content__main {
 .footer__bottom {
   margin-top: 1.6rem;
   padding-top: 3.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 
 /* -------------------------------------------------------------------
  * ## subscribe form
  * ------------------------------------------------------------------- */
-.footer__subscribe .subscribe-form {
+.fw_form .subscribe-form {
   margin: 4rem 0 0 0;
   padding: 0;
   position: relative;
 }
 
-.footer__subscribe #mc-form {
+.fw_form #mc-form {
   width: 100%;
+  padding-bottom: 16rem;
 }
 
-.footer__subscribe #mc-form input[type="email"] {
+.fw_form #mc-form input[type="email"] {
   width: 100%;
   height: 6.8rem;
   font-size: 1.8rem;
@@ -3783,114 +3690,69 @@ html.no-csstransitions .home-content__main {
   border-radius: 4px;
 }
 
-.footer__subscribe #mc-form input[type="email"]:hover,
-.footer__subscribe #mc-form input[type="email"]:focus {
+.fw_form #mc-form input[type="email"]:hover,
+.fw_form #mc-form input[type="email"]:focus {
   box-shadow: none;
 }
 
-.footer__subscribe #mc-form input[type="email"]::-webkit-input-placeholder {
+.fw_form #mc-form input[type="email"]::-webkit-input-placeholder {
 
   /* WebKit, Blink, Edge */
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer__subscribe #mc-form input[type="email"]:-moz-placeholder {
+.fw_form #mc-form input[type="email"]:-moz-placeholder {
 
   /* Mozilla Firefox 4 to 18 */
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
 
-.footer__subscribe #mc-form input[type="email"]::-moz-placeholder {
+.fw_form #mc-form input[type="email"]::-moz-placeholder {
 
   /* Mozilla Firefox 19+ */
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
 
-.footer__subscribe #mc-form input[type="email"]:-ms-input-placeholder {
+.fw_form #mc-form input[type="email"]:-ms-input-placeholder {
 
   /* Internet Explorer 10-11 */
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer__subscribe #mc-form input[type="email"]::-ms-input-placeholder {
+.fw_form #mc-form input[type="email"]::-ms-input-placeholder {
 
   /* Microsoft Edge */
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer__subscribe #mc-form input[type="email"]::placeholder {
+.fw_form #mc-form input[type="email"]::placeholder {
 
   /* Most modern browsers support this now. */
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer__subscribe #mc-form input[type="email"].placeholder {
+.fw_form #mc-form input[type="email"].placeholder {
   color: rgba(255, 255, 255, 0.3) !important;
 }
 
-.footer__subscribe #mc-form input[type=submit] {
-  color: #ffffff;
-  background: #ac4333;
-  border-color: #ac4333;
-  margin-right: 0;
-  padding: 0 20px 0 24px;
-  height: 6.8rem;
-  line-height: 6.4rem;
-  border-radius: 0 4px 4px 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.footer__subscribe #mc-form label {
+.fw_form #mc-form label {
   color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.3rem;
   padding: 0 2rem;
 }
 
-.footer__subscribe #mc-form label i {
+.fw_form #mc-form label i {
   padding-right: 6px;
 }
-
-
-/* ------------------------------------------------------------------- 
- * ## footer social
- * ------------------------------------------------------------------- */
-.footer__social {
-  list-style: none;
-  margin: -1.6rem 0 0 0;
+.fw_form #mc-form textarea{
+  color:#fff;
+  background: rgba(255, 255, 255, 0.03);
 }
-
-.footer__social li {
-  display: inline-block;
-  font-size: 15px;
-  padding: 0;
-  margin-right: 4px;
-}
-
-.footer__social li a {
-  display: block;
-  line-height: 36px;
-  height: 36px;
-  width: 36px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.03);
-  color: #ffffff;
-  border-radius: 50%;
-}
-
-.footer__social li a:hover,
-.footer__social li a:focus,
-.footer__social li a:active {
-  background-color: #ac4333;
-  color: #ffffff;
-}
-
-.footer__social li:last-child {
-  margin-right: 0;
+.fw_form #mc-form textarea::placeholder{
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -4048,13 +3910,13 @@ html.no-csstransitions .home-content__main {
     border-top: none;
   }
 
-  .footer__subscribe #mc-form input[type="email"] {
+  .fw_form #mc-form input[type="email"] {
     padding: 0 2.4rem;
     background: rgba(255, 255, 255, 0.03);
     text-align: center;
   }
 
-  .footer__subscribe #mc-form input[type=submit] {
+  .fw_form #mc-form input[type=submit] {
     position: static;
     margin-right: 0;
     width: 100%;

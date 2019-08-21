@@ -3669,6 +3669,7 @@ html.no-csstransitions .home-content__main {
   margin: 4rem 0 0 0;
   padding: 0;
   position: relative;
+  color:#fff;
 }
 
 .fw_form #mc-form {
@@ -3684,7 +3685,7 @@ html.no-csstransitions .home-content__main {
   padding: 1.8rem 140px 1.8rem 64px;
   background: url(../images/icons/icon-mail.svg) 24px center no-repeat, rgba(255, 255, 255, 0.03);
   background-size: 24px 16px, auto;
-  color: white;
+  color: #fff;
   margin-bottom: 2rem;
   border: none;
   border-radius: 4px;

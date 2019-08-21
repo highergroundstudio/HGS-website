@@ -262,7 +262,7 @@
     /* Netlify AJAX form submit of contact
     * ------------------------------------------------------ */
    var netlifyAjaxForm = function() {
-    $("#contact").submit(function(e) {
+    $("#mc-form").submit(function(e) {
         e.preventDefault();
       
         var $form = $(this);

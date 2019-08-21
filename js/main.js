@@ -1,5 +1,5 @@
 /* ===================================================================
- * Kairos - Main JS
+ * Higher Ground Studio - Main JS
  *
  * ------------------------------------------------------------------- */
 
@@ -291,6 +291,19 @@
         }
     };
 
+    /* Netlify AJAX form submit of contact
+    * ------------------------------------------------------ */
+   var netlifyAjaxForm = function() {
+    $("#contact").submit(function(e) {
+        e.preventDefault();
+      
+        var $form = $(this);
+        $.post($form.attr("action"), $form.serialize()).then(function() {
+          alert("Thank you!");
+        });
+      });
+    };
+
 
    /* Initialize
     * ------------------------------------------------------ */
@@ -306,6 +319,7 @@
         ssAOS();
         ssBackToTop();
         ssAjaxChimp();
+        netlifyAjaxForm();
 
     })();
 

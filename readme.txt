@@ -2,11 +2,11 @@
 
 DESCRIPTION:
 
-KAIROS is a modern and stylish app landing page free website template. It has all the stuff you 
+Higher Ground Studio is a modern and stylish app landing page free website template. It has all the stuff you 
 need that will help you showcase your app. 
 Its impressive banner, call-to-action buttons, video 
 support, testimonial slider, pricing section, and overall design will definitely help you present 
-your app in a way that will surely impress your visitors and potential app users. Kairos is also 
+your app in a way that will surely impress your visitors and potential app users. Higher Ground Studio is also 
 built with clean and organized code making it easy to customize. It is also mobile and retina 
 ready so you can be sure that your site looks great on any devices from mobile to desktop and 
 on any screen resolutions.
@@ -71,7 +71,7 @@ Also, keep your Paypal receipt as proof of payment and your good to go.
 
 SUPPORT:
     
-Since KAIROS is distributed for free, support is not offered. KAIROS is coded according 
+Since Higher Ground Studio is distributed for free, support is not offered. Higher Ground Studio is coded according 
 to current web standards and we did our best to make the template easy to use and modify.
 If you have minimum web development experience, you can easily modify the template. 
 However, If you're still new to HTML and CSS, I suggest that you visit the 

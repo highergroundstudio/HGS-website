@@ -286,8 +286,6 @@
         ssAlertBoxes();
         ssAOS();
         ssBackToTop();
-        netlifyAjaxForm();
-
     })();
 
 })(jQuery);

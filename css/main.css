@@ -3752,10 +3752,16 @@ html.no-csstransitions .home-content__main {
   color:#fff;
   background: rgba(255, 255, 255, 0.03);
 }
+.fw_form #mc-form input{
+  color:#fff;
+  background: rgba(255, 255, 255, 0.03);
+}
 .fw_form #mc-form textarea::placeholder{
   color: rgba(255, 255, 255, 0.3);
 }
-
+.fw_form #mc-form input::placeholder{
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /* ------------------------------------------------------------------- 
  * ## footer site links

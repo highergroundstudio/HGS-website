@@ -31,6 +31,19 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6534095-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-6534095-1');
+    </script>
+
 </head>
 
 <body id="top">
@@ -476,9 +489,9 @@
                             <li>Backup & Restore</li>
                         </ul>
 
-                        <button class="snipcart-add-item btn btn--primary large full-width" data-item-id="1" data-item-name="SEO Review" data-item-price="150.00"
-                            data-item-weight="20" data-item-url="https://highergroundstudio.com"
-                            data-item-description="SEO Review">
+                        <button class="snipcart-add-item btn btn--primary large full-width" data-item-id="1"
+                            data-item-name="SEO Review" data-item-price="150.00" data-item-weight="20"
+                            data-item-url="https://highergroundstudio.com" data-item-description="SEO Review">
                             Get Started
                         </button>
                     </div>
@@ -491,7 +504,7 @@
 
                     <div class="item-plan__top-part">
                         <h3 class="item-plan__title">SEO Optimization</h3>
-                        <p class="item-plan__price">$10</p>
+                        <p class="item-plan__price">$300</p>
                         <p class="item-plan__per">Per Site</p>
                     </div>
 
@@ -503,9 +516,9 @@
                             <li>Backup & Restore</li>
                         </ul>
 
-                        <button class="snipcart-add-item btn btn--primary large full-width" data-item-id="2" data-item-name="SEO Optimization" data-item-price="300.00"
-                            data-item-weight="20" data-item-url="https://highergroundstudio.com"
-                            data-item-description="SEO Optimization">
+                        <button class="snipcart-add-item btn btn--primary large full-width" data-item-id="2"
+                            data-item-name="SEO Optimization" data-item-price="300.00" data-item-weight="20"
+                            data-item-url="https://highergroundstudio.com" data-item-description="SEO Optimization">
                             Get Started
                         </button>
                     </div>
@@ -677,5 +690,10 @@
     <script src="js/main.js"></script>
     <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
         data-api-key="MjkyNzYwODQtYWEzYS00NDNhLTk3ZTMtNTVlMTUyMGYxYTAzNjM3MDIwMDAyMzQzODMyMjEx" id="snipcart"></script>
+    <script>
+        Snipcart.execute('registerLocale', 'en', {
+            "thankyou_message": "Thanks for your order! We will contact you soon to get started!"
+        });
+    </script>
 
 </body>
